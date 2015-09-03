@@ -14,17 +14,14 @@
     <% end %>
   </div>
 
-<<<<<<< HEAD
-<%= form_for(Message.new) do |f| %>
-  名前:
-  <%= f.textarea :name %>
-
-  内容:
-  <%= f.textarea :body %>
-  <%= f.submit class: "btn btn-sm btn-primary" %>
-<% end %>
-=======
+  <%= form_for(Message.new) do |f| %>
+    名前:
+    <%= f.text_area :name %>
+  
+    内容:
+    <%= f.text_area :body %>
+    <%= f.submit class: "btn btn-sm btn-primary" %>
+  <% end %>
 </div>
 
 <%# render 'form' %>
->>>>>>> challenge1
