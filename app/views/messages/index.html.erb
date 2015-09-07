@@ -17,10 +17,10 @@
   <%= form_for(Message.new) do |f| %>
     名前:
     <%= f.text_area :name %>
-  
+    年齢：
+    <%= f.text_area :age %>
     内容:
-    <%= text_area :page, :comtent %>
-# <textarea cols="40" id="page_content" name="page[content]" rows="20"></textarea>
+    <%= f.text_area :body %>
     <%= f.submit class: "btn btn-sm btn-primary" %>
   <% end %>
 </div>
